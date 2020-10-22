@@ -1,0 +1,107 @@
+*{
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-touch-action: manipulation;
+    touch-action: manipulation;
+    //outline: 1px solid red;
+}
+
+.hidden {
+  display: none;
+}
+
+body {
+  min-width: 1230px;
+  max-width: 1230px;
+
+}
+nav {
+  height: 20vh;
+}
+
+.shelf {
+  padding: 0;
+}
+
+.stage {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  text-align: center;
+}
+
+.pokemon-card {
+  padding: 0;
+  cursor: pointer;
+  box-shadow: 0 0 5px 0 #000;
+}
+
+.pokemon-card:active {
+  box-shadow: none;
+}
+
+.pokedex {
+  margin: 0 auto;
+  flex: 1;
+}
+
+.pokedex-img {
+  height: 100%;
+  width: 100%;
+}
+
+.pokedex-display {
+  position: absolute;
+  top: 310px;
+  left: 100px;
+  height: 238px;
+  width: 280px;
+  background-color: #e2e2e2;
+}
+
+.pokedex-pokemon {
+  background-color: #e2e2e2;
+  height: 100%;
+}
+
+.pokedex-stats {
+  position: absolute;
+  bottom: 453px;
+  right: 78px;
+
+  height: 81px;
+  width: 320px;
+  background-color: #172332;
+}
+
+
+.typewriter p, h1 {
+  text-align: left;
+  padding: 1px;
+  padding-left: 10px;
+  color: chartreuse;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid chartreuse; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .10em; /* Adjust as needed */
+  animation: 
+    typing 3s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: chartreuse; }
+}
+
+.loading {
+  background: rgba(0,0,0,0.5)
+}

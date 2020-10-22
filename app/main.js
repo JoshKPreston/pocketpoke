@@ -1,7 +1,10 @@
-import ValuesController from "./Controllers/ValuesController.js";
-
+import PokemonController from "./Controllers/PokemonController.js"
+import { pokemonApi } from "./Services/AxiosService.js"
 class App {
-  valuesController = new ValuesController();
+  pokemonController = new PokemonController();
+
+
 }
 
 window["app"] = new App();
+
